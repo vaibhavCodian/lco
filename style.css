@@ -1,0 +1,362 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 640;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    color: #313438;
+}
+
+#content .tab {
+    position: fixed;
+}
+
+/* navbar */
+.navbtn {
+    font-size: 1.5em !important;
+    border: #0b1016 solid 2px;
+    border-radius: 10%;
+    padding: 2px 2px;
+    margin-left: 20px;
+    position: fixed;
+    right: 3%;
+    top: 2%;
+    backface-visibility: hidden;
+    box-shadow: #32da94 4px 5px ;
+    
+}
+
+/* .main .gs {
+    color: #32da64;
+    border: #32da64 solid 1px;
+    border-radius: 2px;
+    font-size: 1em;
+    padding: 3px 4px;
+    margin: px;
+} */
+
+.brand {
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 750;
+    padding: 10px 14px;
+    border-radius: 4px; 
+    color: #f0f8ff;
+    background-color: #32da64;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #38e973;
+    font-weight: 500;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    margin-top: 10px;
+    padding: 8px 8px 8px 40px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #f1f1f1;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    background-color: #3289da;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.sidenav .closebtn:hover {
+    background: #021b09;
+    padding: 20px;
+    font-size: 2.5em;
+}
+.main {
+    transition: margin-left .3s;
+    padding: 20px;
+    overflow: hidden;
+    /* border: #202225 solid 2px ; */
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+@media screen and (max-height: 450px) {
+    .brand {
+        font-size: 1.3em;
+
+        overflow: hidden;
+    }
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+@media screen and (max-width: 375px) {
+    .brand {
+        font-size: 1.2em;
+    }
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+@media screen and (min-width: 500px) {
+    .brand {
+        margin-left: 100px;
+    }
+    .navbtn {
+        margin-right: 100px;
+    }
+}
+
+
+
+
+/* question and discrption below... */
+.question {
+    text-align: center;
+    padding: 2px 2px;
+    border: #313438 solid 0.5px;
+    border-radius: 2px;
+    margin: 10px;
+    margin-bottom: 35px; 
+    /* background-color: #021c24; */
+    color: #01180e;
+    box-shadow: #32da94 5px 7px; 
+    
+}
+
+.discription {
+    font-size: 1.1em;
+    border: #313438 solid 1px;
+    border-radius: 1px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 8px 15px;
+    margin: 10px;
+    box-shadow: #41cc97 3px 5px 2px;
+}
+
+@media screen and (min-width: 500px) {
+    .question {
+        font-size: 1.7em;
+        margin-left: 95px;
+        margin-right: 95px;
+    }
+
+    .discription{
+        margin-left: 95px;
+        margin-right: 95px;
+    }
+  }
+
+
+/* Style the tab */
+.tab {
+
+    margin-top: 40px; 
+    overflow: hidden;
+    /* border: 1px solid rgb(26, 16, 16); */
+    background-color: #021b09;
+}
+
+/* // tab section comes bellow */
+/* Style the buttons inside the tab */
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 26px;
+    transition: 0.1s;
+    font-size: 17px;
+    color: rgb(48, 173, 196);
+}
+.tab button:first-child {
+    margin-left: 15px;
+}   
+.tab button:last-child {
+    margin-right: 25px;
+}
+.tab .ls {
+    position: absolute;
+    font-weight: 700;
+    right: 3%;
+    font-family: monospace;
+    margin-right: 100px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #32da94;
+    color: #f0f8ff;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #41cc97;
+    color: #ffffff;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-top: none;
+    background-color: #313438;
+    color: antiquewhite;
+    margin: 10px;
+    margin-left: 15px;
+}
+#steps {
+    background: #313438;
+    color: azure;
+}
+
+/* 
+for code highlights....>
+*/
+
+
+@media screen and (min-width: 500px) {
+    .tab {
+        padding: 10px;
+        font-size: 2em;
+
+    }
+    
+    .tab button:first-child {
+        margin-left: 95px;
+    }   
+    .tab .ls {
+        margin-left: 90px; 
+    }
+    
+    .tabcontent {
+        margin-right: 90px;
+        margin-left: 90px;
+    } 
+}
+/* here comes the similar section... */
+
+
+/* for java code blocks */
+
+#java_lang .primary {
+
+}
+#java_lang .secondary {
+
+}
+
+#java_lang .lit {
+
+}
+
+/* for java code blocks */
+
+#c_lang .primary {
+
+}
+#c_lang .secondary {
+
+}
+
+#c_lang .lit {
+
+}
+
+/* for steps */
+.sh {
+
+}
+.sp {
+
+}
+.ss {
+
+}
+
+
+
+
+.similar {
+    margin: 40px;
+    margin-left: 90px;
+    margin-right: 90px;
+    /* border: #021c24 solid 2px; */
+    padding: 20px 40px;
+
+}
+
+
+.similar h2 {
+    font-size: 2em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.similar .list {
+    margin: 20px 0px;
+}
+
+.similar .listitem {
+    font-size: 1.3em;
+    font-family: sans-serif;
+    color: #26d469;
+    margin-top: 20px;
+    display: block;
+}
+
+.similar .listitem:hover {
+    background-color: #26d469;
+    color: #f1f1f1;
+    padding: 10px 20px;
+}
+
+.similar .more {
+    text-decoration: none;
+    background-color: #021c24;
+    color: #fefffe;
+    border-radius: 2px;
+    width: 20%;
+    padding: 11px 15px;
+}
+
+.similar .more:hover {
+    background-color: #32da64;
+    color: #f1f1f1;
+}
+
+
+@media screen and (max-width: 500px) { 
+    .similar {
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+    .similar .more {
+        width: 50%;
+    }
+}

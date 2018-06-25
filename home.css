@@ -1,0 +1,38 @@
+.picks {
+
+    margin: 20px;
+    margin-right: 95px;
+    margin-left: 95px;
+
+}
+.picks h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2em;
+}
+
+.pick {
+    margin: 2px;
+    padding: 10px 15px ;
+    border: #333333 solid 2px;
+    background-color: #fffdfd;
+    
+    border-radius: 5px;
+}
+.pick:hover {
+    background-color: #e7f1ee;
+}
+.pick a:hover {
+    color: #071018;
+}
+.pick a{
+     
+    color: #111416;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 500px) {
+    .picks {
+        margin-left: 20px;
+        margin-right: 35px;
+    }
+}
